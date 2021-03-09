@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="info" style="position: fixed; width: 100%; z-index: 5;">
         <b-navbar-brand href="#">Edu G.</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -8,7 +8,8 @@
        
             <b-navbar-nav class="ml-auto text-center">
             
-                <b-nav-item-dropdown text="Lang" right>
+                <b-nav-item-dropdown right>
+                    <template slot="button-content">{{ $t('MenuLang')}}</template>
                     <b-dropdown-item class="text-center" v-on:click="changeLocale('es')" id="es"><a>{{ $t('EsLanguage') }}</a></b-dropdown-item>
                     <b-dropdown-item class="text-center" v-on:click="changeLocale('en')" id="en"><a>{{ $t('EnLanguage') }}</a></b-dropdown-item>
                     <b-dropdown-item class="text-center" v-on:click="changeLocale('cat')" id="cat"><a>{{ $t('CatLanguage') }}</a></b-dropdown-item>
