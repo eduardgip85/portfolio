@@ -65,5 +65,8 @@ export default {
 html{
     scroll-behavior: smooth;
 }
+ul{
+    padding-left: 0!important;
+}
 
 </style>

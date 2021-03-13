@@ -32,8 +32,17 @@
                                 </span>
 
                             </div>
-                        </b-row>
+                        
+                        <v-chip
+                        class="white--text ml-0"
+                        color="purple"
+                        label
+                        small
+                        >
+                        APP
+                        </v-chip>
                 
+                        </b-row>
 
                         <b-button href="#" variant="primary">Go somewhere</b-button>
                     </b-card>

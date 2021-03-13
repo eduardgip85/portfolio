@@ -23,7 +23,7 @@
     
     <About id=""></About>
     <Portfolio></Portfolio>
-    <About id=""></About>
+    <Experience></Experience>
     <About id=""></About>
     <About id="about"></About>
 
@@ -35,12 +35,14 @@
 <script>
 import About from '@/components/About.vue'
 import Portfolio from '@/components/Portfolio'
+import Experience from '@/components/Experience'
 
 export default {
   name: 'Home',
   components: {
     About,
-    Portfolio
+    Portfolio,
+    Experience
   }
 }
 

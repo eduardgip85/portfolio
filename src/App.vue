@@ -1,23 +1,29 @@
 <template>
-  <div id="app">
-    <NavBar></NavBar>
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    <router-view/>
-  </div>
+
+  <v-app>
+
+    <div id="app">
+      <NavBar></NavBar>
+      <router-view/>
+    </div>
+    
+  </v-app>
+    
 </template>
 
 <script>
-    import NavBar from "@/components/Navbar";
+import NavBar from "@/components/Navbar";
+import HelloWorld from './components/HelloWorld';
 
-    export default {
-        name: 'App',
-        components: {NavBar},
-    }
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    HelloWorld
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-
-</style>
