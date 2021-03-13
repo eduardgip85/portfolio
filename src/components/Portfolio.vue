@@ -8,6 +8,44 @@
                     </h1>
                 </div>
             </div>
+
+            <!-- <v-row>
+                <v-card
+                    v-for="(n, index) in portfolio"
+                    :key="index"
+                    class="mx-auto"
+                    max-width="400"
+                >
+                    <v-img
+                    class="white--text align-end"
+                    height="200px"
+                    :src="n.img"
+                    >
+                    <v-card-title>Top 10 Australian beaches</v-card-title>
+                    </v-img>
+
+                    <v-card-subtitle class="pb-0">
+                    {{n.titulo}}
+                    </v-card-subtitle>
+
+                    <v-card-text class="text--primary">
+                    <div>Whitehaven Beach</div>
+
+                    <div>Whitsunday Island, Whitsunday Islands</div>
+                    </v-card-text>
+
+                    <v-card-actions>
+                    <v-btn
+                        color="orange"
+                        text
+                    >
+                        Share
+                    </v-btn>
+
+                    </v-card-actions>
+                </v-card>
+            </v-row> -->
+
             <div class="row">
                 <b-card-group deck class="p-2" style="max-width: 100%"> 
                     <b-card style="max-width: 400px" class="text-center">
@@ -48,8 +86,6 @@
                     </b-card>
 
                 </b-card-group>
-                
-                
                 
             </div>
         </div>
