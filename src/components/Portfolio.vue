@@ -1,93 +1,80 @@
 <template>
-    <section class="portfolio-section pt-3">
+    <section class="portfolio-section pt-10">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h1>
-                        PORTFOLIO
+                        {{ $t('PortfolioSection') }}
                     </h1>
                 </div>
             </div>
 
-            <!-- <v-row>
+            <v-row>
                 <v-card
                     v-for="(n, index) in portfolio"
                     :key="index"
-                    class="mx-auto"
-                    max-width="400"
+                    class="mx-auto p-2"
                 >
                     <v-img
                     class="white--text align-end"
-                    height="200px"
+                    height="150px"
                     :src="n.img"
                     >
-                    <v-card-title>Top 10 Australian beaches</v-card-title>
+                    <v-card-title>{{n.titulo}}</v-card-title>
                     </v-img>
 
-                    <v-card-subtitle class="pb-0">
-                    {{n.titulo}}
-                    </v-card-subtitle>
 
                     <v-card-text class="text--primary">
-                    <div>Whitehaven Beach</div>
-
-                    <div>Whitsunday Island, Whitsunday Islands</div>
+                        <!-- <div>{{n.desc}}</div> -->
+                        <!-- uso esto porque solo tengo 1 proyecto sino tendria que buscar el
+                        porque no funciona si lo llamo desde el n.desc -->
+                        <div>{{ $t('Project1Desc') }}</div>
                     </v-card-text>
 
-                    <v-card-actions>
-                    <v-btn
-                        color="orange"
-                        text
-                    >
-                        Share
-                    </v-btn>
-
-                    </v-card-actions>
-                </v-card>
-            </v-row> -->
-
-            <div class="row">
-                <b-card-group deck class="p-2" style="max-width: 100%"> 
-                    <b-card style="max-width: 400px" class="text-center">
+                    <v-card-subtitle class="pt-0">
                         
-                        <b-col md="12">
-                            <a href="">
-                                <img src="../assets/background.jpg" alt="" style="max-width:400px; height: auto; max-height: 170px; width: 100%">
-                            </a>
-                        </b-col>
+                        {{ $t('ProjectSubtitle') }}
 
-                        <b-card-title class="pt-2">{{this.portfolio[0].titulo}}</b-card-title>
-                        <b-card-text>{{this.portfolio[0].desc}}</b-card-text>
-                        <b-card-sub-title>Tecnologias usadas</b-card-sub-title>
+                        <!-- Options of frameworks or languages I use in project -->
+                        <v-card-actions>
                         
-                        <b-row style="justify-content: center" class="p-2">
-                            <div v-for="(item, index) in this.portfolio[0].tecnologias" :key="index" >
-                                
-                                {{item}}
-                                
-                                <span v-if="index < item.length - 1" style="float: right" class="pl-2 pr-2"> 
-                                 |
-                                </span>
+                            <v-chip
+                            class="white--text ml-0 mr-1"
+                            label
+                            small
+                            v-for="(i, index) in n.tecnologias"
+                            :key="index"
+                            :color="i.color"
+                            >
+                            {{i.name}}
+                            </v-chip>
 
-                            </div>
-                        
-                        <v-chip
-                        class="white--text ml-0"
-                        color="purple"
-                        label
-                        small
+                        </v-card-actions>
+
+                    </v-card-subtitle>
+
+
+                    <!-- Btn to go to the pag web / project -->
+                    <v-footer padless>
+                        <v-col
+                        class="text-center"
+                        cols="12"
                         >
-                        APP
-                        </v-chip>
-                
-                        </b-row>
+                        
+                            <v-btn      
+                                color="orange"
+                                text
+                                :href="n.link"
+                                target="_blank"
+                            >
+                                {{ $t('ProjectBtnGo') }}
+                            </v-btn>
 
-                        <b-button href="#" variant="primary">Go somewhere</b-button>
-                    </b-card>
+                        </v-col>
+                    </v-footer>
+                </v-card>
+            </v-row>
 
-                </b-card-group>
-                
-            </div>
         </div>
     </section>
 </template>
@@ -95,25 +82,42 @@
 <script>
 export default {
     data() {
-    return {
+        return {
             portfolio: [
                 {
                     // img: this.$i18n.t('MenuLang').toString(),
-                    img:'../assets/background.jpg',
+                    img:'https://i.imgur.com/EXQhtvO.jpg',
                     titulo: 'AMARTEC',
-                    desc: 'Desarrollo de pagina web corporativa desde 0 para la empresa de gestion de espacios amartec',
-                    tecnologias: ['Laravel','Html','CSS'],
-                    link: ''
+                    desc: this.$i18n.t('Project1Desc').toString(),
+                    tecnologias: [
+                        {
+                            name: 'Laravel',
+                            color: 'purple'
+                        },
+                        {
+                            name: 'Html',
+                            color: 'blue'
+                        },
+                        {
+                            name: 'CSS',
+                            color: 'orange'
+                        },
+                    ],
+                    link: 'https://www.masterquiz.es'
                 },
-                {
-                    img: '../assets/logo.png',
-                    titulo: 'Proj 2',
-                    desc: '',
-                    tecnologias: [''],
-                    link: ''
-                }
             ],
         }
     },
+    computed: {
+
+    }
 }
 </script>
+
+<style scoped>
+@media(min-width: 400px){
+    .v-card{
+        max-width: 400px;
+    }
+}
+</style>

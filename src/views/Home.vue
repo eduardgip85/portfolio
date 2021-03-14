@@ -2,7 +2,7 @@
   <div class="home">
     <img src="../assets/background.jpg" alt="" style="width: 100%; height: auto; max-height: 500px">
 
-    <div class="text-white textIntro">
+    <div class="text-white textIntro" id="intro">
       <b-row style="text-align: center" class="text-center m-0">
         <b-col cols="12">
           <div>
@@ -21,13 +21,11 @@
       <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
     </svg>
     
-    <About id=""></About>
-    <Portfolio></Portfolio>
-    <Experience></Experience>
-    <About id=""></About>
     <About id="about"></About>
-
-    
+    <Portfolio id="portfolio"></Portfolio>
+    <Experience id="experience"></Experience>
+    <Skills id="skills"></Skills>
+   
   </div>
 </template>
 
@@ -36,13 +34,15 @@
 import About from '@/components/About.vue'
 import Portfolio from '@/components/Portfolio'
 import Experience from '@/components/Experience'
+import Skills from '@/components/Skills'
 
 export default {
   name: 'Home',
   components: {
     About,
     Portfolio,
-    Experience
+    Experience,
+    Skills
   }
 }
 

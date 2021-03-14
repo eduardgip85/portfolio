@@ -7,7 +7,24 @@
       <router-view/>
     </div>
     
+    <v-card-text style="height: 100px; position: relative">
+      <v-fab-transition>
+        <v-btn
+          color="red"
+          dark
+          bottom
+          right
+          fab
+          fixed
+          href="#"
+        >
+          <v-icon>mdi-arrow-up</v-icon>
+        </v-btn>
+      </v-fab-transition>
+    </v-card-text>
+
   </v-app>
+  
     
 </template>
 

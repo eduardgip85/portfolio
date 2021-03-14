@@ -15,10 +15,11 @@
                     <b-dropdown-item class="text-center" v-on:click="changeLocale('cat')" id="cat"><a>{{ $t('CatLanguage') }}</a></b-dropdown-item>
                 </b-nav-item-dropdown>
                 
-                <b-nav-item><a>{{ $t('MenuAbout') }}</a></b-nav-item>
-                <b-nav-item><a>{{ $t('MenuPortfolio') }}</a></b-nav-item>
-                <b-nav-item><a>{{ $t('MenuExperience') }}</a></b-nav-item>
-                <b-nav-item><a>{{ $t('MenuContact') }}</a></b-nav-item>
+                <b-nav-item href="#about"><a>{{ $t('MenuAbout') }}</a></b-nav-item>
+                <b-nav-item href="#portfolio"><a>{{ $t('MenuPortfolio') }}</a></b-nav-item>
+                <b-nav-item href="#experience"><a>{{ $t('MenuExperience') }}</a></b-nav-item>
+                <b-nav-item href="#skills"><a>{{ $t('MenuSkills') }}</a></b-nav-item>
+                <b-nav-item href="#contact"><a>{{ $t('MenuContact') }}</a></b-nav-item>
 
             </b-navbar-nav>
         </b-collapse>
@@ -45,7 +46,6 @@ export default {
         },
     },
     mounted() {
-        //Change default  language to catalan
         const lang = window.navigator.language
         if (lang.includes('es')) {
         this.$i18n.locale = 'es'

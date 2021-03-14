@@ -1,15 +1,15 @@
 <template>
   <v-container>
 
-    <v-row>
+    <v-row class="pt-10">
       <v-col>
         <h1>
-            EXPERIENCIA
+            {{ $t('ExperienceSection') }}
         </h1>
       </v-col>
     </v-row>
 
-    <v-timeline>
+    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
 
       <v-timeline-item
         v-for="(year, i) in years"
