@@ -25,6 +25,7 @@
     <Portfolio id="portfolio"></Portfolio>
     <Experience id="experience"></Experience>
     <Skills id="skills"></Skills>
+    <Footer id="contacta"></Footer>
    
   </div>
 </template>
@@ -35,6 +36,7 @@ import About from '@/components/About.vue'
 import Portfolio from '@/components/Portfolio'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'Home',
@@ -42,7 +44,8 @@ export default {
     About,
     Portfolio,
     Experience,
-    Skills
+    Skills,
+    Footer
   }
 }
 

@@ -7,7 +7,7 @@
       <router-view/>
     </div>
     
-    <v-card-text style="height: 100px; position: relative">
+    <v-card-text style="padding: 0!important;">
       <v-fab-transition>
         <v-btn
           color="red"

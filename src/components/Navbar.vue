@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="lg" type="dark" variant="info" style="position: fixed; width: 100%; z-index: 5;">
+    <b-navbar toggleable="lg" type="dark" style="position: fixed; width: 100%; z-index: 5;" class="bgnavbar">
         <b-navbar-brand href="#">Edu G.</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -19,7 +19,7 @@
                 <b-nav-item href="#portfolio"><a>{{ $t('MenuPortfolio') }}</a></b-nav-item>
                 <b-nav-item href="#experience"><a>{{ $t('MenuExperience') }}</a></b-nav-item>
                 <b-nav-item href="#skills"><a>{{ $t('MenuSkills') }}</a></b-nav-item>
-                <b-nav-item href="#contact"><a>{{ $t('MenuContact') }}</a></b-nav-item>
+                <b-nav-item href="#contacta"><a>{{ $t('MenuContact') }}</a></b-nav-item>
 
             </b-navbar-nav>
         </b-collapse>
@@ -69,4 +69,7 @@ ul{
     padding-left: 0!important;
 }
 
+.bgnavbar{
+    background: #5c6bc0 !important;
+}
 </style>
