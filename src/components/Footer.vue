@@ -23,7 +23,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-          Este porfolio esta hecho con Vue, usando Vuetify para "timeline", usando HackMD para imagenes en nuve y GitHub.
+          {{ $t('FooterText') }}
       </v-card-text>
 
       <v-divider></v-divider>

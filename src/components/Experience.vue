@@ -11,30 +11,91 @@
 
     <v-timeline :dense="$vuetify.breakpoint.smAndDown">
 
+      <!-- Esta hardcoreado porque el i18n no se pasarlo desde la parte script hasta aqui y que sea
+      cambiable cuando cambie el idioma. -->
+      <!-- Exp1 -->
       <v-timeline-item
-        v-for="(year, i) in years"
-        :key="i"
-        :color="year.color"
+        color="cyan"
         small
       >
         <template v-slot:opposite>
           <span
-            :class="`headline font-weight-bold ${year.color}--text`"
-            v-text="year.year"
+            :class="`headline font-weight-bold cyan--text`"
+            v-text="'Feb 2021 - Mar 2021'"
           ></span>
         </template>
 
         <v-card
-        :color="year.color"
+        color="cyan"
         dark
         >
           <v-card-title class="title">
-            {{year.titulo}}
+            {{ $t('Exp1Titulo') }}
           </v-card-title>
 
           <v-card-text class="white text--primary pt-1">
             
-            <p>{{year.desc}}</p>
+            <p>{{ $t('Exp1Desc') }}</p>
+            
+          </v-card-text>
+
+        </v-card>
+
+      </v-timeline-item>
+
+      <!-- Exp2 -->
+      <v-timeline-item
+        color="green"
+        small
+      >
+        <template v-slot:opposite>
+          <span
+            :class="`headline font-weight-bold green--text`"
+            v-text="'Sep 2019 - Jun 2020'"
+          ></span>
+        </template>
+
+        <v-card
+        color="green"
+        dark
+        >
+          <v-card-title class="title">
+            {{ $t('Exp2Titulo') }}
+          </v-card-title>
+
+          <v-card-text class="white text--primary pt-1">
+            
+            <p>{{ $t('Exp2Desc') }}</p>
+            
+          </v-card-text>
+
+        </v-card>
+
+      </v-timeline-item>
+
+      <!-- Exp3 -->
+      <v-timeline-item
+        color="pink"
+        small
+      >
+        <template v-slot:opposite>
+          <span
+            :class="`headline font-weight-bold pink--text`"
+            v-text="'Sep 2017 - Jun 2019'"
+          ></span>
+        </template>
+
+        <v-card
+        color="pink"
+        dark
+        >
+          <v-card-title class="title">
+            {{ $t('Exp3Titulo') }}
+          </v-card-title>
+
+          <v-card-text class="white text--primary pt-1">
+            
+            <p>{{ $t('Exp3Desc') }}</p>
             
           </v-card-text>
 
@@ -74,3 +135,44 @@
     }),
   }
 </script>
+
+<!-- esto es para mejorar la experiencia y usar el script de years, pero antes tengo que resolver
+el problema de porque no se cambia el idioma del titulo/desc si lo llamo asi {{ $t('Exp3Titulo') }} desde el 
+mismo script.
+
+<v-timeline :dense="$vuetify.breakpoint.smAndDown">
+
+      <v-timeline-item
+        v-for="(year, i) in years"
+        :key="i"
+        :color="year.color"
+        small
+      >
+        <template v-slot:opposite>
+          <span
+            :class="`headline font-weight-bold ${year.color}--text`"
+            v-text="year.year"
+          ></span>
+        </template>
+
+        <v-card
+        :color="year.color"
+        dark
+        >
+          <v-card-title class="title">
+            {{year.titulo}}
+          </v-card-title>
+
+          <v-card-text class="white text--primary pt-1">
+            
+            <p>{{year.desc}}</p>
+            
+          </v-card-text>
+
+        </v-card>
+
+      </v-timeline-item>
+
+</v-timeline>
+
+-->
