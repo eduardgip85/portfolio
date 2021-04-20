@@ -5,15 +5,42 @@
                 <div class="col">
                     <h1>
                         {{ $t('PortfolioSection') }}
+                        {{mostrar}}
                     </h1>
                 </div>
             </div>
 
-            <v-row>
+            <v-bottom-navigation
+                :value="value"
+                color="primary"
+                grow
+            >
+                <v-btn v-on:click="mostrar = 'all'">
+                <span>Todos</span>
+
+                <v-icon>mdi-history</v-icon>
+                </v-btn>
+
+                <v-btn v-on:click="mostrar='laravel'">
+                <span>Laravel</span>
+
+                <v-icon>mdi-heart</v-icon>
+                </v-btn>
+
+                <v-btn v-on:click="mostrar='html'">
+                <span>HTML / CSS</span>
+
+                <v-icon>mdi-map-marker</v-icon>
+                </v-btn>
+            </v-bottom-navigation>
+
+
+            <v-row class="pt-5">
                 <v-card
                     v-for="(n, index) in portfolio"
                     :key="index"
                     class="mx-auto p-2"
+                    v-show="mostrar =='all' || mostrar == n.menutec "
                 >
                     <v-img
                     class="white--text align-end"
@@ -83,12 +110,15 @@
 export default {
     data() {
         return {
+            mostrar: 'all',
+            value: 1 ,
             portfolio: [
                 {
                     // img: this.$i18n.t('MenuLang').toString(),
                     img:'https://i.imgur.com/EXQhtvO.jpg',
                     titulo: 'AMARTEC',
                     desc: this.$i18n.t('Project1Desc').toString(),
+                    menutec: 'laravel',
                     tecnologias: [
                         {
                             name: 'Laravel',
@@ -103,7 +133,25 @@ export default {
                             color: 'orange'
                         },
                     ],
-                    link: 'https://www.masterquiz.es'
+                    link: 'https://www.amartec.es'
+                },
+                {
+                    // img: this.$i18n.t('MenuLang').toString(),
+                    img:'https://i.imgur.com/EXQhtvO.jpg',
+                    titulo: 'PORTFOLIO DAW',
+                    desc: this.$i18n.t('Project1Desc').toString(),
+                    menutec: 'html',
+                    tecnologias: [
+                        {
+                            name: 'Html',
+                            color: 'blue'
+                        },
+                        {
+                            name: 'CSS',
+                            color: 'orange'
+                        },
+                    ],
+                    link: 'uardgip85.github.io/portfolio1'
                 },
             ],
         }
