@@ -24,6 +24,7 @@ const messages = {
         ProjectSubtitle: 'Technologies used',
         ProjectBtnGo: 'GO',
         Project1Desc: 'Development of a corporate website from scratch for the space management company Amartec',
+        Project2Desc: 'Development of my portfolio in the degree, made with pure CSS and HTML and hosted in GITHUB',
         ExperienceSection: 'EXPERIENCE',
         Exp1Titulo: 'Front-end developer in La Llucana',
         Exp1Desc: 'Creation of new code and maintenance of it. Using the Vue.js framework and also using Firebase as a BD.',
@@ -33,7 +34,7 @@ const messages = {
         Exp3Desc: 'Higher degree of cross-platform application development where we mainly use Android Studio to create APPs. Also using MySQL Workbench.',
         SkillsSection: 'SKILLS',
         FooterText: 'This portfolio is made with Vue, using Vuetify for "timeline", using HackMD for cloud images and GitHub.',
-
+        btnNavigationAll:'All',
 
 
     },
@@ -57,6 +58,7 @@ const messages = {
         ProjectSubtitle: 'Tecnologías usadas',
         ProjectBtnGo: 'IR',
         Project1Desc: 'Desarrollo de pagina web corporativa desde 0 para la empresa de gestion de espacios amartec',
+        Project2Desc: 'Desarrollo de mi portfolio en el grado, hecho con CSS puro y HTML y alojado en GITHUB',
         ExperienceSection: 'EXPERIENCIA',
         Exp1Titulo: 'Programador Front-end en La Llucana',
         Exp1Desc: "Creación de nuevo código y mantenimiento del mismo. Utilizando el framework Vue.js y también utilizando Firebase como BD.",
@@ -66,7 +68,7 @@ const messages = {
         Exp3Desc: "Curso de desarrollo de aplicaciones multiplataforma donde usamos principalmente Android Studio para crear APPs. También la utilización de MySQL Workbench.",
         SkillsSection: 'HABILIDADES',
         FooterText: 'Este porfolio esta hecho con Vue, usando Vuetify para "timeline", usando HackMD para imagenes en nube y GitHub.',
-
+        btnNavigationAll:'Todos',
 
 
     },
@@ -90,6 +92,7 @@ const messages = {
         ProjectSubtitle: 'Tecnologíes usades',
         ProjectBtnGo: 'ANAR',
         Project1Desc: "Desenvolupament de la pàgina web corporativa des de 0 per a l'empresa de gestió d'espais AMARTEC",
+        Project2Desc: "Desenvolupament del meu portfoli en el grau, fet amb CSS pur i HTML i allotjat en GitHub",
         ExperienceSection: 'EXPERIÈNCIA',
         Exp1Titulo: 'Programador Front-end en La Llucana',
         Exp1Desc: 'Creació de nou codi i manteniment del mateix. Utilitzant el framework Vue.js i també utilitzant Firebase com BD.',
@@ -99,7 +102,7 @@ const messages = {
         Exp3Desc: "Curs de desenvolupament d'aplicacions multiplataforma on fem servir principalment Android Studio per a crear APPs. També la utilització de MySQL Workbench.",
         SkillsSection: 'HABILITATS',
         FooterText: 'Aquest portfoli esta fet amb Vue, fent servi Vuefity per el "timeline", fent servi HackMD per las imatges al núvol i GitHub.',
-
+        btnNavigationAll:'Tots',
 
 
     }
