@@ -5,7 +5,7 @@
                 <div class="col">
                     <h1>
                         {{ $t('PortfolioSection') }}
-                        {{mostrar}}
+                        <!-- {{mostrar}} -->
                     </h1>
                 </div>
             </div>
@@ -44,15 +44,18 @@
                     v-show="mostrar =='all' || mostrar == n.menutec "
                 >
                     <v-img
-                    class="white--text align-end"
+                    class="black--text"
                     height="150px"
                     :src="n.img"
                     >
-                    <v-card-title>{{n.titulo}}</v-card-title>
+                        <!-- <v-card-title>{{n.titulo}}</v-card-title> -->
                     </v-img>
 
 
                     <v-card-text class="text--primary">
+                        
+                        <v-card-title>{{n.titulo}}</v-card-title>
+
                         <!-- <div>{{n.desc}}</div> -->
                         <!-- uso esto porque solo tengo 1 proyecto sino tendria que buscar el
                         porque no funciona si lo llamo desde el n.desc -->
@@ -121,7 +124,7 @@ export default {
             portfolio: [
                 {
                     // img: this.$i18n.t('MenuLang').toString(),
-                    img:'https://i.imgur.com/EXQhtvO.jpg',
+                    img:'https://i.imgur.com/NHf58pb.jpg',
                     titulo: 'AMARTEC',
                     desc: this.$i18n.t('Project1Desc').toString(),
                     menutec: 'laravel',
@@ -143,7 +146,7 @@ export default {
                 },
                 {
                     // img: this.$i18n.t('MenuLang').toString(),
-                    img:'https://i.imgur.com/EXQhtvO.jpg',
+                    img:'https://i.imgur.com/obPJKzY.png',
                     titulo: 'PORTFOLIO DAW',
                     desc: this.$i18n.t('Project2Desc').toString(),
                     menutec: 'html',

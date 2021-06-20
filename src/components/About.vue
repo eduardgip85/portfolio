@@ -19,6 +19,9 @@
                     <p>
                        {{ $t('AboutTxt3') }}
                     </p>
+                    <p>
+                       {{ $t('AboutTxt4') }}
+                    </p>
                 </div>
             </div>
         </div>
