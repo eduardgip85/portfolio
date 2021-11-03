@@ -12,13 +12,13 @@
     </div>
 
     <div class="container">
+      <!-- 
       <div class="row">
         <div class="contact-wrap">
-
           <h3 class="mb-4 text-center">Get in touch with us</h3>
-          
+
           <form
-            action="POST"
+            method="POST"
             data-netlify="true"
             id="contactForm"
             name="contactForm"
@@ -70,10 +70,9 @@
                   ></textarea>
                 </div>
               </div>
-              <div class="field">
-                  <div
-                  data-netlify-recaptcha="true"></div>
-              </div>
+
+              <div data-netlify-recaptcha="true"></div>
+
               <div class="col-md-12">
                 <div class="form-group text-center">
                   <input
@@ -88,6 +87,19 @@
           </form>
         </div>
       </div>
+      -->
+
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Name <input type="text" name="form-name"/></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="form-email"/></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
   </section>
 </template>
