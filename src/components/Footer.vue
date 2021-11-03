@@ -59,6 +59,10 @@
             name: 'mdi-github',
             link: 'https://github.com/eduardgip85',
         },
+        {
+            name: 'mdi-alpha-b-box',
+            link: 'https://eddcoding.blogspot.com/',
+        },
       ],
     }),
   }
