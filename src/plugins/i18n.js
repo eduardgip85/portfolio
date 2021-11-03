@@ -19,11 +19,13 @@ const messages = {
         AboutSection: 'ABOUT',
         AboutTxt1: 'Hello everyone, I am Edu and I am a web programmer in Barcelona, ​​Spain.',
         AboutTxt2: 'I like the whole process of creating a website, either from the beginning with a sketch using Adobe XD, going on to program everything with the methodologies that I know and that I keep learning, and more important, when I see the final result and see what what you think you can do.',
-        AboutTxt3: 'In my free time I like to do sports, such as "Calisthenia" or climbing, and I also like to spend time on the computer, either watching a series / movie, or even playing a video game with my friends.',
+        AboutTxt3: 'I would like to work as a web programmer as a Front End developer.',
+        AboutTxt4: 'In my free time I like to do sports, such as "Calisthenia" or climbing, and I also like to spend time on the computer, either watching a series / movie, or even playing a video game with my friends.',
         PortfolioSection: 'PORTFOLIO',
         ProjectSubtitle: 'Technologies used',
         ProjectBtnGo: 'GO',
         Project1Desc: 'Development of a corporate website from scratch for the space management company Amartec',
+        Project2Desc: 'Development of my portfolio in the degree, made with pure CSS and HTML and hosted in GITHUB',
         ExperienceSection: 'EXPERIENCE',
         Exp1Titulo: 'Front-end developer in La Llucana',
         Exp1Desc: 'Creation of new code and maintenance of it. Using the Vue.js framework and also using Firebase as a BD.',
@@ -33,7 +35,7 @@ const messages = {
         Exp3Desc: 'Higher degree of cross-platform application development where we mainly use Android Studio to create APPs. Also using MySQL Workbench.',
         SkillsSection: 'SKILLS',
         FooterText: 'This portfolio is made with Vue, using Vuetify for "timeline", using HackMD for cloud images and GitHub.',
-
+        btnNavigationAll:'All',
 
 
     },
@@ -52,11 +54,13 @@ const messages = {
         AboutSection: 'SOBRE MI',
         AboutTxt1: 'Hola a tod@s, yo soy Edu y soy programador web en Barcelona, España.',
         AboutTxt2: 'Me gusta todo el proceso de crear una web, ya sea desde el principio con un croquis usando Adobe XD, pasando a programarlo todo con las metodologias que conozco y que aprendo nuevamente , y sobretodo y mas importante, cuando veo el resultado final y ver que lo que piensas, puedes hacerlo.',
-        AboutTxt3: 'En mi tiempo libre me gusta hacer deporte, como la "calistenia" o la escalada, y también me gusta pasar rato en el ordenador, ya sea viendo una serie / pelicula, o incluso jugando a algun videojuego con mis amigos.',
+        AboutTxt3: 'Me gustaría llegar a trabajar de programador de páginas web cómo desarrollador de Front End.',
+        AboutTxt4: 'En mi tiempo libre me gusta hacer deporte, como la "calistenia" o la escalada, y también me gusta pasar rato en el ordenador, ya sea viendo una serie / pelicula, o incluso jugando a algun videojuego con mis amigos.',
         PortfolioSection: 'PORTFOLIO',
         ProjectSubtitle: 'Tecnologías usadas',
         ProjectBtnGo: 'IR',
         Project1Desc: 'Desarrollo de pagina web corporativa desde 0 para la empresa de gestion de espacios amartec',
+        Project2Desc: 'Desarrollo de mi portfolio en el grado, hecho con CSS puro y HTML y alojado en GITHUB',
         ExperienceSection: 'EXPERIENCIA',
         Exp1Titulo: 'Programador Front-end en La Llucana',
         Exp1Desc: "Creación de nuevo código y mantenimiento del mismo. Utilizando el framework Vue.js y también utilizando Firebase como BD.",
@@ -66,7 +70,7 @@ const messages = {
         Exp3Desc: "Curso de desarrollo de aplicaciones multiplataforma donde usamos principalmente Android Studio para crear APPs. También la utilización de MySQL Workbench.",
         SkillsSection: 'HABILIDADES',
         FooterText: 'Este porfolio esta hecho con Vue, usando Vuetify para "timeline", usando HackMD para imagenes en nube y GitHub.',
-
+        btnNavigationAll:'Todos',
 
 
     },
@@ -85,11 +89,13 @@ const messages = {
         AboutSection: 'SOBRE MI',
         AboutTxt1: 'Hola a tots i totes, jo sóc Edu i sóc programador web a Barcelona, ​​Espanya.',
         AboutTxt2: `M'agrada tot el procés de crear un web, ja sigui des del principi amb un croquis usant Adobe XD, passant a programar-ho tot amb les metodologies que conec i que aprenc novament, i sobretot i més important, quan veig el resultat final i veure que el que penses, pots fer-ho.`,
-        AboutTxt3: `En el meu temps lliure m'agrada fer esport, com la "cal·listènia" o l'escalada, i també m'agrada passar estona a l'ordinador, ja sigui veient una sèrie / pel·lícula, o fins i tot jugant a algun videojoc amb els meus amics.`,
+        AboutTxt3: `M'agradaria arribar a treballar com a programador de pàgines web desenvolupant de la part de Front End.`,
+        AboutTxt4: `En el meu temps lliure m'agrada fer esport, com la "cal·listènia" o l'escalada, i també m'agrada passar estona a l'ordinador, ja sigui veient una sèrie / pel·lícula, o fins i tot jugant a algun videojoc amb els meus amics.`,
         PortfolioSection: 'PORTFOLI',
         ProjectSubtitle: 'Tecnologíes usades',
         ProjectBtnGo: 'ANAR',
         Project1Desc: "Desenvolupament de la pàgina web corporativa des de 0 per a l'empresa de gestió d'espais AMARTEC",
+        Project2Desc: "Desenvolupament del meu portfoli en el grau, fet amb CSS pur i HTML i allotjat en GitHub",
         ExperienceSection: 'EXPERIÈNCIA',
         Exp1Titulo: 'Programador Front-end en La Llucana',
         Exp1Desc: 'Creació de nou codi i manteniment del mateix. Utilitzant el framework Vue.js i també utilitzant Firebase com BD.',
@@ -99,7 +105,7 @@ const messages = {
         Exp3Desc: "Curs de desenvolupament d'aplicacions multiplataforma on fem servir principalment Android Studio per a crear APPs. També la utilització de MySQL Workbench.",
         SkillsSection: 'HABILITATS',
         FooterText: 'Aquest portfoli esta fet amb Vue, fent servi Vuefity per el "timeline", fent servi HackMD per las imatges al núvol i GitHub.',
-
+        btnNavigationAll:'Tots',
 
 
     }

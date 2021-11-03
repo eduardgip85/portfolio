@@ -92,6 +92,20 @@
                     striped
                     ></v-progress-linear>
                 </div>
+                
+                <br>
+
+                <div style="background:#cdcdcd;">
+                    <h5>
+                        GIT
+                    </h5>
+                    <v-progress-linear
+                    color="black accent-4"
+                    height="10"
+                    value="85"
+                    striped
+                    ></v-progress-linear>
+                </div>
 
             </div>
 
