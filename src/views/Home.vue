@@ -27,6 +27,7 @@
     <Skills id="skills"></Skills>
     <!-- <Contact id="contacta"></Contact> -->
     <Footer id="footer"></Footer>
+    <ExperienceN id="experienceNor"></ExperienceN>
    
   </div>
 </template>
@@ -40,6 +41,9 @@ import Skills from '@/components/Skills'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 
+//normal portfolio
+import ExperienceN from '@/components/ExperienceN'
+
 export default {
   name: 'Home',
   components: {
@@ -48,7 +52,8 @@ export default {
     Experience,
     Skills,
     Footer,
-    Contact
+    Contact,
+    ExperienceN
   }
 }
 
