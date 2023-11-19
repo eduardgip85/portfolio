@@ -25,9 +25,8 @@
     <Portfolio id="portfolio"></Portfolio>
     <Experience id="experience"></Experience>
     <Skills id="skills"></Skills>
-    <!-- <Contact id="contacta"></Contact> -->
+    <Contact id="contacta"></Contact>
     <Footer id="footer"></Footer>
-    <ExperienceN id="experienceNor"></ExperienceN>
    
   </div>
 </template>

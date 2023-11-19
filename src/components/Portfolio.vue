@@ -33,6 +33,12 @@
 
                 <v-icon>mdi-map-marker</v-icon>
                 </v-btn>
+
+                <v-btn v-on:click="mostrar='api'">
+                <span>API</span>
+
+                <v-icon>mdi-map-marker</v-icon>
+                </v-btn>
             </v-bottom-navigation>
 
 
@@ -45,7 +51,7 @@
                 >
                     <v-img
                     class="black--text"
-                    height="150px"
+                    height="200px"
                     :src="n.img"
                     >
                         <!-- <v-card-title>{{n.titulo}}</v-card-title> -->
@@ -64,6 +70,12 @@
                         </div>
                         <div v-if="index==1">
                             {{ $t('Project2Desc') }}
+                        </div>
+                        <div v-if="index==2">
+                            {{ $t('Project3Desc') }}
+                        </div>
+                        <div v-if="index==3">
+                            {{ $t('Project3Desc') }}
                         </div>
                     </v-card-text>
 
@@ -166,6 +178,50 @@ export default {
                     ],
                     link: 'https://eduardgip85.github.io/portfolio1/'
                 },
+                {
+                    // img: this.$i18n.t('MenuLang').toString(),
+                    img:'https://i.imgur.com/6uphPhz.png',
+                    titulo: 'MENU WEBSITE',
+                    desc: this.$i18n.t('Project3Desc').toString(),
+                    menutec: 'html',
+                    tecnologias: [
+                        {
+                            name: 'Html',
+                            color: 'blue'
+                        },
+                        {
+                            name: 'CSS',
+                            color: 'orange'
+                        },
+                        {
+                            name: 'JavaScript',
+                            color: 'yellow'
+                        },
+                    ],
+                    link: 'https://github.com/eduardgip85/menu/'
+                },
+                {
+                    // img: this.$i18n.t('MenuLang').toString(),
+                    img:'https://i.imgur.com/s55zfhh.png',
+                    titulo: 'SIMPLE POKEDEX',
+                    desc: this.$i18n.t('Project2Desc').toString(),
+                    menutec: 'api',
+                    tecnologias: [
+                        {
+                            name: 'Html',
+                            color: 'blue'
+                        },
+                        {
+                            name: 'JavaScript',
+                            color: 'yellow'
+                        },
+                        {
+                            name: 'API',
+                            color: 'red'
+                        },
+                    ],
+                    link: 'https://eduardgip85.github.io/portfolio1/'
+                },
             ],
         }
     },
@@ -175,6 +231,7 @@ export default {
                 case 0: return 'blue-grey'
                 case 1: return 'purple'
                 case 2: return 'blue'
+                case 3: return 'red'
                 default: return 'blue-grey'
             }
         },
@@ -186,6 +243,7 @@ export default {
 @media(min-width: 400px){
     .v-card{
         max-width: 400px;
+        margin-top: 20px;
     }
 }
 </style>
